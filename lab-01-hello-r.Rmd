@@ -1,6 +1,6 @@
 ---
 title: "Lab 01 - Hello R!"
-author: "Taylor Pascoe"
+author:  "Taylor Pascoe"
 output: 
   tufte::tufte_html:
     css: ../lab.css
