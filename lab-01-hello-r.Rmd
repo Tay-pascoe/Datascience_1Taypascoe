@@ -256,12 +256,12 @@ Start with the `datasaurus_dozen` and pipe it into the `filter` function to filt
 Store the resulting filtered data frame as a new data frame called `dino_data`.
 
 ```{r}
-star_data <- datasaurus_dozen %>%
-  filter(dataset == "star")
+circle_data <- datasaurus_dozen %>%
+  filter(dataset == "circle")
 
-star_data %>%
+circle_data %>%
   summarize(r = cor(x, y))
-ggplot(data = star_data, mapping = aes(x = x, y = y)) +
+ggplot(data = circle_data, mapping = aes(x = x, y = y)) +
   geom_point()
 ```
 
@@ -304,7 +304,7 @@ Start with `dino_data` and calculate a summary statistic that we will call `r` a
 ```
 
 ```{r}
-dino_data %>%
+circle_data %>%
   summarize(r = cor(x, y))
 ```
 
@@ -325,6 +325,16 @@ The correlation coefficent for star is **-0.062961**. This dataset is of higher 
 🧶 ✅ ⬆️ *This is another good place to pause, knit, commit changes with the commit message "Added answer for Ex 3", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
 4.  Plot `y` vs. `x` for the `circle` dataset. You can (and should) reuse code we introduced above, just replace the dataset name with the desired dataset. Then, calculate the correlation coefficient between `x` and `y` for this dataset. How does this value compare to the `r` of `dino`?
+
+circle_data <- datasaurus_dozen %>%
+  filter(dataset == "circle")
+
+circle_data %>%
+  summarize(r = cor(x, y))
+ggplot(data = circle_data, mapping = aes(x = x, y = y)) +
+  geom_point()
+  
+The correlation coefficent is **-0.06834336	** and is of lower value than star at **-0.062961**
 
 🧶 ✅ ⬆️ *You should pause again, commit changes with the commit message "Added answer for Ex 4", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
