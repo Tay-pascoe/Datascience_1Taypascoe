@@ -359,6 +359,16 @@ datasaurus_dozen %>%
   summarize(r = cor(x, y)) %>%
   print(13)
 ```
+away	-0.06412835			
+bullseye	-0.06858639			
+circle	-0.06834336			
+dino	-0.06447185			
+dots	-0.06034144			
+h_lines	-0.06171484			
+high_lines	-0.06850422			
+slant_down	-0.06897974			
+slant_up	-0.06860921			
+star	-0.06296110	
 
 You're done with the data analysis exercises, but we'd like you to do two more things:
 
